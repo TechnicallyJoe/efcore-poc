@@ -12,7 +12,7 @@ Assuming you are standing in the root of the project folder.
 4. Run the following script:
 ```
 dotnet tool install --global dotnet-ef
-dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add .\src\movies.core\movies.core.csproj package Microsoft.EntityFrameworkCore.Design
 dotnet ef migrations add InitialCreate --project .\src\movies.core\movies.core.csproj
 dotnet ef database update --project .\src\movies.core\movies.core.csproj
 ```
